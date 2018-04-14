@@ -1,3 +1,5 @@
+import React from 'react';
+
 class InboxItem extends React.Component {
 	render() {
 		return (
