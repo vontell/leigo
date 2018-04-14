@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-class UserPreview extends React.Components {
+class UserPreview extends React.Component {
 	render() {
 		return(
 			<div className="user-preview" style={{backgroundColor: this.props.accepted ? "#8ACB9D": "#EEBE71"}}>
