@@ -1,3 +1,5 @@
+'use strict';
+
 import React from 'react';
 
 class InboxItem extends React.Component {
