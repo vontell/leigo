@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-export default class TaskCard extends React.Component {
+export default class MessageBox extends React.Component {
   render() {
     var userimg = this.props.userimg;
     var message = this.props.message;
