@@ -3,9 +3,10 @@
 import React from 'react';
 import { formatPattern } from 'react-router/lib/PatternUtils';
 
-class ProjectCreation extends React.Component {
+export default class ProjectCreation extends React.Component {
     render() {
 		return(
+      
         <form>
             <div className = "title"> <h2> Leigo </h2> </div>
             <div className = "description">
@@ -16,20 +17,21 @@ class ProjectCreation extends React.Component {
             </div>
             <div className = "budget">
                 <h2> Budget: </h2>
-                <input type="number" value="Under" name="budgetTextBox"> </input>
+                <input type="number" name="budgetTextBox"/> 
             </div>
             <div className = "deadline">
                 <h2> Deadline: </h2>
-                <input type="date" value="MM/DD/YYYY" name = "deadlineTextBox"> </input>
+                <input type="date" value="MM/DD/YYYY" name = "deadlineTextBox"/> 
             </div>
             <div className = "architectureButton">
-                 <input type="checkbox" name="architectureCheckbox" value="Architecture"> </input>
+                 <input type="checkbox" name="architectureCheckbox" value="Architecture"/> 
                  <label for="architecture">Create Your own Architecture</label>
             </div>
             <div>
-                <input type="submit" value="Submit"> </input>
+                <input type="submit" value="Submit"/> 
             </div>
         </form>
+      
         )
     }
 
