@@ -4,7 +4,7 @@ import React from 'react';
 
 class ArchitecturePage extends React.Component {
 
-	// Backend calls this method and sets list of messages to this.state
+	// Backend calls this method and sets this.state to all ArchitecturePage 
 	componentDidMount() {
 		this.state = {}
 	}
@@ -12,9 +12,9 @@ class ArchitecturePage extends React.Component {
 	render() {
 		return (
 			<div className="architecture-page">
-				<Inbox inboxList={this.state.messages}/>
-
-				
+				<Inbox inboxList={this.state.messages} />
+				<ArchitectureSummary architectureSummary={this.state.projectSummary} />
+				<TaskList taskList={this.state.data} />
 			</div>
 		);
 	}
