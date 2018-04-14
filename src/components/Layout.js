@@ -2,9 +2,11 @@
 
 import React from 'react';
 import { Link } from 'react-router';
+import TaskDialog from './TaskDialog';
 
 export default class Layout extends React.Component {
   render() {
+    const x = true;
     return (
       <div className="app-container">
         <header>
@@ -13,13 +15,15 @@ export default class Layout extends React.Component {
           </Link>
         </header>
         <div className="app-content">{this.props.children}</div>
+       
         <footer>
+        <TaskDialog editing={x}></TaskDialog> 
           <p>
             This is a demo app to showcase universal rendering and routing with <strong>React</strong> and <strong>Express</strong>.
           </p>
 
           <p>
-            Do you want to know more about Node.js and Universal JavaScript? <strong>Checkout <a href="https://nodejsdesignpatterns.com">Node.js Design Patterns</a></strong>.
+            Do you want to know more about Nergergergergeode.js and Universal JavaScript? <strong>Checkout <a href="https://nodejsdesignpatterns.com">Node.js Design Patterns</a></strong>.
           </p>
 
           <p>
