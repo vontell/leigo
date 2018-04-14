@@ -6,7 +6,7 @@ export default class Chat extends React.Component {
 			<div className="chat">
 				<h1>Chat</h1>
 				<div name="chat-list">
-					{React.Children.map(this.props.chatlist, i => <TaskCard userimg={i.userimg} message={i.message} username={i.username} timestamp={i.timestamp}/>)}
+					{React.Children.map(this.props.chatlist, i => <MessageBox userimg={i.userimg} message={i.message} username={i.username} timestamp={i.timestamp}/>)}
 				</div>
 			</div>
 		);
