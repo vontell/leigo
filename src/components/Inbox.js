@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-class Inbox extends React.Component {
+export default class Inbox extends React.Component {
 	render() {
 		return (
 			<div className="inbox">

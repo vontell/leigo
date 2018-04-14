@@ -2,6 +2,11 @@ import React from 'react';
 
 export default class TaskDialog extends React.Component {
     render() {
+        var title = this.props.title;
+        var tech = this.props.tech;
+        var timeScale = this.props.timeScale;
+        var description = this.props.description;
+        var comments = this.props.comments;
         var editing = this.props.editing;
         if(editing) {
             return (
@@ -24,17 +29,23 @@ export default class TaskDialog extends React.Component {
             )
         }
         return (
-            <head>
+            <div className= "taskDialog">
                 <div> 
-                   Title: {this.title}
+                   Title: {title}
                </div>
                <div>
-                   Tech: {this.tech}
+                   Tech: {tech}
               </div>
               <div>
-                   Time Scale: {this.timeScale}
+                   Time Scale: {timeScale}
              </div>
-            </head>
+             <div>
+                 Description: {description}
+            </div>
+            <div>
+                Comments: {comments}
+            </div>
+            </div>
             )
     }
 }
