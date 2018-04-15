@@ -1,10 +1,10 @@
 <div align="center">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
-  <a> <img width="220px" height="220px" src="logo.png"></a><p style="display:inline; font-size:64px; font-family:'Open Sans';">Leigo</p>
+  <a> <img width="220px" height="220px" src="logo.png"></a>
 </div>
 
 -----------------------------------------
-
+### Leigo
 Leigo is a platform where project owners, system architects, developer, designers, and testers come together to create amazing products. With modularity and quality in mind, Leigo facilitates the sharing of development tasks among multiple developers, dictated by a contracted architects design.
 
 ## How it Works
