@@ -17,7 +17,7 @@ export default class Layout extends React.Component {
         <div className="app-content">{this.props.children}</div>
        
         <footer>
-        <TaskDialog editing={x}></TaskDialog> 
+        <TaskDialog editing={x}></TaskDialog>
           <p>
             This is a demo app to showcase universal rendering and routing with <strong>React</strong> and <strong>Express</strong>.
           </p>

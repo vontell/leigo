@@ -12,11 +12,18 @@ import NotFoundPage from './components/NotFoundPage';
 // initialize the server and configure support for ejs templates
 const app = new Express();
 const server = new Server(app);
+const bodyParser = require('body-parser');
+const api = require('./api');
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
+
 // define the folder that will be used for static assets
 app.use(Express.static(path.join(__dirname, 'static')));
+
+app.use('/api', api);
 
 // universal routing and rendering
 app.get('*', (req, res) => {
