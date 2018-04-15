@@ -4,14 +4,20 @@ import React from 'react';
 import { Link } from 'react-router';
 
 export default class ArchitectSummary extends React.Component {
-  render() {
-    return (
-      <div name="architecture-summary">
-        <h1 className = "title" > {this.prop.title} </h1>
-        <p className = "description">  {this.prop.description} </p>
-        <p className = "budget">  {this.prop.budget} </p>
-        <p className = "deadline"> {this.prop.deadline} days</p>
-      </div>
-    );
-  }
+    
+    constructor(props) {
+      super(props);
+      this.state = {};
+    }
+    
+    render() {
+        return (
+            <div name="architecture-summary">
+                <h1 className = "title" > {this.props.title} </h1>
+                <p className = "description">  {this.props.description} </p>
+                <p className = "budget">  {this.props.budget} </p>
+                <p className = "deadline"> {this.props.deadline} days</p>
+            </div>
+        );
+    }
 }

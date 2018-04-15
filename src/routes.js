@@ -9,7 +9,7 @@ import ArchitecturePage from './components/ArchitecturePage';
 import ProjectCreation from './components/ProjectCreation';
 
 const routes = (
-  <Route path="/" component={ProjectCreation}>
+  <Route path="/" component={ArchitecturePage}>
     
   </Route>
 );

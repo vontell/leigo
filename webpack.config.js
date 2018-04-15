@@ -7,7 +7,7 @@ const path = require('path');
 
 module.exports = {
   devtool: debug ? 'inline-sourcemap' : null,
-  entry: path.join(__dirname, 'src', 'app-client.js'),
+  entry: ['whatwg-fetch', path.join(__dirname, 'src', 'app-client.js')],
   devServer: {
     inline: true,
     port: 3333,
