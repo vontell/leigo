@@ -77,7 +77,8 @@ var inboxSchema = mongoose.Schema({
     read: Boolean,
     user: String,
     deleted: Boolean,
-    active: Boolean
+    active: Boolean,
+    project: String,
 });
 var InboxItem = mongoose.model("InboxItem", inboxSchema);
 
@@ -193,6 +194,7 @@ function _createArchitectInvites(project, minRating) {
                 user: data[i].username,
                 deleted: false,
                 active: false,
+                project: project._id,
             }).save();
         }
     });

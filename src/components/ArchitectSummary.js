@@ -7,17 +7,25 @@ export default class ArchitectSummary extends React.Component {
     
     constructor(props) {
       super(props);
-      this.state = {};
+      this.state = {project: props.project};
     }
     
     render() {
-        return (
+        
+        if (this.state.project) {
+            return (
+                <div name="architecture-summary">
+                    <h1 className = "title" > {this.state.project.title} </h1>
+                    <p className = "description">  {this.state.project.description} </p>
+                    <p className = "budget">  {this.state.project.budget} </p>
+                    <p className = "deadline"> {this.state.project.deadline} days</p>
+                </div>
+            );
+        } else {
             <div name="architecture-summary">
-                <h1 className = "title" > {this.props.title} </h1>
-                <p className = "description">  {this.props.description} </p>
-                <p className = "budget">  {this.props.budget} </p>
-                <p className = "deadline"> {this.props.deadline} days</p>
+                <p>No project selected</p>
             </div>
-        );
+        }
+        
     }
 }
