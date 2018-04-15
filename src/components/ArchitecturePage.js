@@ -11,13 +11,13 @@ export default class ArchitecturePage extends React.Component {
       super(props);
       this.state = {
           messages: [
-            'message1' {
+            'message1': {
               'title': "Project 1",
               'description': "Description for project 1",
               'budget': 5000,
               'date': "09/22/2018"
             }, 
-            'message2' {
+            'message2': {
               'title': "Project 2",
               'description': "This is the description for project 2",
               'budget': 2348,
@@ -38,7 +38,7 @@ export default class ArchitecturePage extends React.Component {
             this.setState({selectedProject: json.project, selectedTasks: json.tasks});
           }).catch(function(ex) {
             console.log('parsing failed', ex)
-          })
+          });
     }
 
 	// Backend calls this method and sets this.state to all ArchitecturePage 
@@ -58,8 +58,12 @@ export default class ArchitecturePage extends React.Component {
 	render() {
 		return (
 			<div className="architecture-page" style={style.page}>
-				<Inbox inboxList={this.state.messages} style = {style.inbox} />
-          { this.state.selectedProject && <ArchitectSummary project={this.state.selectedProject} style={style.selectedProject}/> }
+                {this.state.messages &&
+                    <Inbox inboxList={this.state.messages} style = {style.inbox}  />
+                }
+                {this.state.selectedProject &&
+                    <ArchitectSummary project={this.state.selectedProject} style={style.selectedProject}/>
+                }
 				<TaskList taskList={this.state.selectedTasks} />
 			</div>
 		);

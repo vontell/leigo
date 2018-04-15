@@ -1,6 +1,7 @@
 'use strict';
 
 import React from 'react';
+import InboxItem from './InboxItem';
 
 export default class Inbox extends React.Component {
     
