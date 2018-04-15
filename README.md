@@ -1,6 +1,6 @@
 <div align="center">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet"> 
-  <a> <img width="220px" height="220px" src="logo.png"> <h1 style="display:inline; font-family:'Open Sans';">Leigo</h1></a>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+  <a> <img width="220px" height="220px" src="logo.png"></a><p style="display:inline; font-size:64px; font-family:'Open Sans';">Leigo</p>
 </div>
 
 -----------------------------------------
