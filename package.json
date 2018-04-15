@@ -27,6 +27,7 @@
     "express": "^4.14.0",
     "mongodb": "^3.0.6",
     "mongoose": "^5.0.14",
+    "materialize": "^1.0.0",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
     "react-router": "^2.6.1"
