@@ -5,7 +5,7 @@
 
 -----------------------------------------
 ### Leigo
-Leigo is a platform where project owners, system architects, developer, designers, and testers come together to create amazing products. With modularity and quality in mind, Leigo facilitates the sharing of development tasks among multiple developers, dictated by a contracted architects design.
+Leigo is a platform where project owners, system architects, developers, designers, and testers come together to create amazing products. With modularity and quality in mind, Leigo facilitates the sharing of development tasks among multiple developers, dictated by a contracted architects design.
 
 ## How it Works
 Leigo works by allowing a project owner (i.e. someone with an idea) to easily contract out various development and technical tasks to users across the world. The steps of how this works occurs below:
@@ -32,3 +32,5 @@ As complications and confusion may arise through this modular process, at all ti
 
 ## Technologies Used
 Feel free to contribute to the project with a pull request! The platform uses NodeJS as it's backend, with a MongoDB database for holding all user and project information. The front-end is written in React, and all dependencies are bundled up using webpack.
+
+Also feel free to checkout out the [Devpost Submission](https://devpost.com/software/leigo)!
