@@ -19,7 +19,7 @@ export default class ProjectCreation extends React.Component {
             divTop : {
                 width : '100%',
                 height : '300px',
-                background : '#253237',
+                background : '#253237'
             },
             
             divCenter : {
@@ -31,16 +31,18 @@ export default class ProjectCreation extends React.Component {
                 marginTop: "-100px",
                 borderRadius: "4px",
                 padding: "32px",
-                marginBottom: "150px"
+                marginBottom: "150px",
+                boxShadow : '0 4px 8px 0 grey'
             },
             header: {
                 fontSize: "32px",
+                paddingBottom : '10px'
             },
             subheader: {
                 fontSize: "18px",
                 color: "grey",
-                paddingTop: "8px",
-                paddingBottom: "4px",
+                paddingTop: "12px",
+                paddingBottom: "6px",
             },
             largeInput: {
                 width: "100%",
@@ -52,14 +54,32 @@ export default class ProjectCreation extends React.Component {
                 backgroundColor: "#f8f8f8",
                 resize: "none",
                 fontSize: "14px"
+            },
+            button : {
+                marginTop : '5px',
+                right: "5px",
+                backgroundColor: '#EE4266', 
+                border: 'none',
+                color: 'white',
+                padding: '10px 20px',
+                textAlign: 'center',
+                textDecoration: 'none',
+                display: 'inline-block',
+                fontSize: '16px',
+                margin: '4px 2px', 
+                cursor: 'pointer',
+                boxShadow : '0 4px 8px 0 grey',
+            },
+            fullWidth: {
+                width: "100%",
+                textAlign: "end"
             }
 
         }
 		return(
-
-            
             <div style = {style.divBackground}>
-                <div style = {style.divTop}/>
+                <div style = {style.divTop}>
+                </div>
                 <div style = {style.divCenter} class="z-depth-4">
                     <form>
                         <div> <h2 style={style.header}> Leigo </h2> </div>
@@ -79,8 +99,8 @@ export default class ProjectCreation extends React.Component {
                             <input type="checkbox" name="architectureCheckbox" value="Architecture"/> 
                             <label for="architecture">Create Your own Architecture</label>
                         </div>
-                        <div>
-                            <input type="submit" value="Submit"/> 
+                        <div style={style.fullWidth}>
+                            <input style = {style.button} type="submit" value="Submit"/> 
                         </div>
                     </form>
                 </div>
