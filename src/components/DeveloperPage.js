@@ -17,12 +17,22 @@ export default class DeveloperPage extends React.Component {
 	render() {
 		return (
 			<div className="developer-page">
-				<PrevTaskTile task={this.state.prev-task} />
+				<div>
+                <PrevTaskTile task={this.state.prev-task} />
+                </div>
+                <div>
 				<CurrentTask name={this.state.task-name} description={this.state.task-description} tech={this.state.task-tech} deadline={this.state.task-deadline}/>
-				<NextTaskTile task={this.state.next-task} />
+				</div>
+                <div>
+                <NextTaskTile task={this.state.next-task} />
+                </div>
+                <div>
                 <DeveloperSummary title={this.state.title}/>
+                </div>
+                <div>
                 <Chat chatlist = {this.state.chatlist} />
-			</div>
+                </div>
+            </div>
 		);
 	}
 }
